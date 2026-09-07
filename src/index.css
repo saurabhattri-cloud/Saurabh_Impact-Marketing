@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, Cambria, "Times New Roman", serif;
+  --font-sans: "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "Geist Mono", monospace;
+
+  --color-surface: #F2F1EC;
+  --color-surface-dim: #E8E7E0;
+  --color-surface-bright: #FAF9F6;
+  --color-surface-canvas: #FAF9F6;
+  --color-surface-subtle: #FAF9F6;
+  --color-surface-muted: #E8E7E0;
+  --color-surface-variant: #D1D0C9;
+  --color-surface-container: #E8E7E0;
+  --color-surface-container-high: #DCD9D0;
+  --color-surface-container-highest: #D1D0C9;
+  --color-surface-container-low: #F2F1EC;
+  --color-surface-container-lowest: #FFFFFF;
+
+  --color-border-subtle: rgba(26, 26, 26, 0.15);
+  --color-border-strong: #1A1A1A;
+  --color-text-primary: #1A1A1A;
+  --color-text-secondary: #58554E;
+  --color-text-tertiary: #8A8780;
+
+  --color-primary: #1A1A1A;
+  --color-primary-container: #1A1A1A;
+  --color-primary-fixed-dim: #D1D0C9;
+  --color-on-primary: #F2F1EC;
+  --color-brand-accent-hover: #333333;
+
+  --color-on-surface: #1A1A1A;
+  --color-on-surface-variant: #4A4740;
+
+  --color-metric-positive-bg: #EAECE5;
+  --color-metric-positive-text: #1A1A1A;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: #F2F1EC;
+    color: #1A1A1A;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Material Symbols font icon helper */
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #F2F1EC;
+}
+::-webkit-scrollbar-thumb {
+  background: #1A1A1A;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #000000;
+}

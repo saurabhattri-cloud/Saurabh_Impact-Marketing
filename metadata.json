@@ -1,0 +1,8 @@
+{
+  "name": "Remix Impact AI",
+  "description": "Autonomous multi-agent marketing intelligence platform coordinating strategy, content, SEO, social media, and paid campaigns.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
